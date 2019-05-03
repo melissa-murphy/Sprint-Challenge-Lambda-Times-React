@@ -18,25 +18,25 @@ const Card = props => {
   );
 };
 
-// Make sure to include PropTypes.
-Card.propTypes = {
-  card: PropTypes.arrayOf(
-    PropTypes.shape({
-      headline: PropTypes.string,
-      img: PropTypes.string,
-      author: PropTypes.string
-    })
-  )
-}
+// // Make sure to include PropTypes.
+// Card.propTypes = {
+//   card: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       headline: PropTypes.string,
+//       img: PropTypes.string,
+//       author: PropTypes.string
+//     })
+//   )
+// }
 
 // ? array or straight to shape?
 // Make sure to include PropTypes.
-// Card.propTypes = {
-//   card: PropTypes.shape({
-//     headline: PropTypes.string,
-//     img: PropTypes.string,
-//     author: PropTypes.string
-//   })
-// }
+Card.propTypes = {
+  card: PropTypes.shape({
+    headline: PropTypes.string,
+    img: PropTypes.string,
+    author: PropTypes.string
+  })
+}
 
 export default Card;
