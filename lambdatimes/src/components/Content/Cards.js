@@ -23,7 +23,7 @@ Cards.propTypes = {
       tab: PropTypes.string.isRequired,
       img: PropTypes.string.isRequired,
       author: PropTypes.string.isRequired,
-      cards: PropTypes.array.isRequired,
+      cards: PropTypes.array
 
     })
   ).isRequired
