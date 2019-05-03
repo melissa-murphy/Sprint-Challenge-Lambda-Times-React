@@ -13,7 +13,7 @@ const Tabs = props => {
           <Tab
             key={index}
             tab={tab}
-            onClick={props.selectTabHandler}
+            selectTabHandler={props.selectTabHandler}
             selectedTab={props.selectedTab}
           />
         ))}
@@ -24,16 +24,9 @@ const Tabs = props => {
 
 // Make sure to use PropTypes to validate your types!
 Tabs.propTypes = {
-  tabs: PropTypes.arrayOf(
-    PropTypes.oneOf([
-      'all',
-      'javascript',
-      'technology',
-      'node',
-      'React.js',
-      'bootstrap'
-    ])
-  ).isRequired
+  selectedTab: PropTypes.string.isRequired,
+  selectTabHandler: PropTypes.func.isRequired,
+  tabs: PropTypes.array.isRequired,
 };
 
 export default Tabs;
