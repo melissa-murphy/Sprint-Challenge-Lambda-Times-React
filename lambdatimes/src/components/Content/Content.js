@@ -23,7 +23,7 @@ export default class Content extends Component {
     //   tabData: this.state.tabs,
     //   cardData: this.state.cards
     // });
-    
+
     this.setState({ selected: 'all', tabs: tabData, cards: cardData });
   }
 
