@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { Component } from 'react';
 import TopBar from './components/TopBar';
 import Header from './components/Header';
